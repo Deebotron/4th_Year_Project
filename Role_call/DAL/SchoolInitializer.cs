@@ -13,14 +13,14 @@ namespace Role_call.DAL
         {
             var students = new List<Student>
             {
-            new Student{FirstName="Stephen",LastName="Begley", AttendanceDate=DateTime.Parse("2015-04-01, 10.05")},
-            new Student{FirstName="Meredith",LastName="Alonso",AttendanceDate=DateTime.Parse("2015-02-01, 10.03")},
-            new Student{FirstName="Arturo",LastName="Anand",AttendanceDate=DateTime.Parse("2015-04-01, 12.02")},
-            new Student{FirstName="Gytis",LastName="Barzdukas",AttendanceDate=DateTime.Parse("2015-04-01, 12.03")},
-            new Student{FirstName="Yan",LastName="Li",AttendanceDate=DateTime.Parse("2015-08-01, 15.01")},
-            new Student{FirstName="Peggy",LastName="Justice",AttendanceDate=DateTime.Parse("2015-02-01, 10.01")},
-            new Student{FirstName="Laura",LastName="Norman",AttendanceDate=DateTime.Parse("2015-02-01, 10.02")},
-            new Student{FirstName="Nino",LastName="Olivetto",AttendanceDate=DateTime.Parse("2015-08-01, 15.02")}
+            new Student{FirstName="Stephen",LastName="Begley", AttendanceDate=DateTime.Parse("2015-04-01")},
+            new Student{FirstName="Meredith",LastName="Alonso",AttendanceDate=DateTime.Parse("2015-02-01")},
+            new Student{FirstName="Arturo",LastName="Anand",AttendanceDate=DateTime.Parse("2015-04-01")},
+            new Student{FirstName="Gytis",LastName="Barzdukas",AttendanceDate=DateTime.Parse("2015-04-01")},
+            new Student{FirstName="Yan",LastName="Li",AttendanceDate=DateTime.Parse("2015-08-01")},
+            new Student{FirstName="Peggy",LastName="Justice",AttendanceDate=DateTime.Parse("2015-02-01")},
+            new Student{FirstName="Laura",LastName="Norman",AttendanceDate=DateTime.Parse("2015-02-01")},
+            new Student{FirstName="Nino",LastName="Olivetto",AttendanceDate=DateTime.Parse("2015-08-01")}
             };
 
             students.ForEach(s => context.Students.Add(s));
