@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Role_call.Models;
+
 
 namespace Role_call.Controllers
 {
@@ -24,6 +26,12 @@ namespace Role_call.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Student()
+        {
+            ViewBag.Message = "Student Page";
             return View();
         }
     }

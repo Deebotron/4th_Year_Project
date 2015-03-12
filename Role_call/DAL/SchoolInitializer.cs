@@ -13,14 +13,14 @@ namespace Role_call.DAL
         {
             var students = new List<Student>
             {
-            new Student{FirstName="Stephen",LastName="Begley", AttendanceDate=DateTime.Parse("2015-04-01, 10.05")},
-            new Student{FirstName="Meredith",LastName="Alonso",AttendanceDate=DateTime.Parse("2015-02-01, 10.03")},
-            new Student{FirstName="Arturo",LastName="Anand",AttendanceDate=DateTime.Parse("2015-04-01, 12.02")},
-            new Student{FirstName="Gytis",LastName="Barzdukas",AttendanceDate=DateTime.Parse("2015-04-01, 12.03")},
-            new Student{FirstName="Yan",LastName="Li",AttendanceDate=DateTime.Parse("2015-08-01, 15.01")},
-            new Student{FirstName="Peggy",LastName="Justice",AttendanceDate=DateTime.Parse("2015-02-01, 10.01")},
-            new Student{FirstName="Laura",LastName="Norman",AttendanceDate=DateTime.Parse("2015-02-01, 10.02")},
-            new Student{FirstName="Nino",LastName="Olivetto",AttendanceDate=DateTime.Parse("2015-08-01, 15.02")}
+            new Student{FirstName="Stephen",LastName="Begley", AttendanceDate=DateTime.Parse("2015-04-01")},
+            new Student{FirstName="Meredith",LastName="Alonso",AttendanceDate=DateTime.Parse("2015-02-01")},
+            new Student{FirstName="Arturo",LastName="Anand",AttendanceDate=DateTime.Parse("2015-04-01")},
+            new Student{FirstName="Gytis",LastName="Barzdukas",AttendanceDate=DateTime.Parse("2015-04-01")},
+            new Student{FirstName="Yan",LastName="Li",AttendanceDate=DateTime.Parse("2015-08-01")},
+            new Student{FirstName="Peggy",LastName="Justice",AttendanceDate=DateTime.Parse("2015-02-01")},
+            new Student{FirstName="Laura",LastName="Norman",AttendanceDate=DateTime.Parse("2015-02-01")},
+            new Student{FirstName="Nino",LastName="Olivetto",AttendanceDate=DateTime.Parse("2015-08-01")}
             };
 
             students.ForEach(s => context.Students.Add(s));
@@ -39,18 +39,18 @@ namespace Role_call.DAL
             context.SaveChanges();
             var Attendances = new List<Attendance>
             {
-            new Attendance{StudentID=1,CourseID=1050,Year=Year.First},
-            new Attendance{StudentID=1,CourseID=4022,Year=Year.Fourth},
-            new Attendance{StudentID=1,CourseID=4041,Year=Year.Fourth},
-            new Attendance{StudentID=2,CourseID=1045,Year=Year.First},
-            new Attendance{StudentID=2,CourseID=3141,Year=Year.Third},
-            new Attendance{StudentID=2,CourseID=2021,Year=Year.Second},
-            new Attendance{StudentID=3,CourseID=1050,Year=Year.First},
-            new Attendance{StudentID=4,CourseID=1050,Year=Year.First},
-            new Attendance{StudentID=4,CourseID=4022,Year=Year.Fourth},
-            new Attendance{StudentID=5,CourseID=4041,Year=Year.Fourth},
-            new Attendance{StudentID=6,CourseID=1045, Year=Year.First},
-            new Attendance{StudentID=7,CourseID=3141,Year=Year.Third},
+                new Attendance{StudentID=1,CourseID=1050,Year=Year.First},
+                new Attendance{StudentID=1,CourseID=4022,Year=Year.Fourth},
+                new Attendance{StudentID=1,CourseID=4041,Year=Year.Fourth},
+                new Attendance{StudentID=2,CourseID=1045,Year=Year.First},
+                new Attendance{StudentID=2,CourseID=3141,Year=Year.Third},
+                new Attendance{StudentID=2,CourseID=2021,Year=Year.Second},
+                new Attendance{StudentID=3,CourseID=1050,Year=Year.First},
+                new Attendance{StudentID=4,CourseID=1050,Year=Year.First},
+                new Attendance{StudentID=4,CourseID=4022,Year=Year.Fourth},
+                new Attendance{StudentID=5,CourseID=4041,Year=Year.Fourth},
+                new Attendance{StudentID=6,CourseID=1045, Year=Year.First},
+                new Attendance{StudentID=7,CourseID=3141,Year=Year.Third},
             };
             Attendances.ForEach(s => context.Attendances.Add(s));
             context.SaveChanges();

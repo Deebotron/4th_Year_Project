@@ -20,7 +20,7 @@ namespace Role_call.Models
         public DateTime attendanceDateTime { get; set; }
 
         // is the correct?????
-        public List<Attendance> Attendances { get; set; }
+       // public List<Attendance> Attendances { get; set; }
 
         public virtual Course Course { get; set; }
         public virtual Student Student { get; set; }
