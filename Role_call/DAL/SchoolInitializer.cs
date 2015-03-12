@@ -13,7 +13,7 @@ namespace Role_call.DAL
         {
             var students = new List<Student>
             {
-            new Student{FirstName="Stephen",LastName="Begley", AttendanceDate=DateTime.Parse("2015-04-01")},
+            new Student{FirstName="Stephen",LastName="Begley", AttendanceDate=DateTime.Parse("00:00:00 2015-04-01")},
             new Student{FirstName="Meredith",LastName="Alonso",AttendanceDate=DateTime.Parse("2015-02-01")},
             new Student{FirstName="Arturo",LastName="Anand",AttendanceDate=DateTime.Parse("2015-04-01")},
             new Student{FirstName="Gytis",LastName="Barzdukas",AttendanceDate=DateTime.Parse("2015-04-01")},

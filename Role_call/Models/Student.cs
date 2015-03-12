@@ -8,12 +8,20 @@ namespace Role_call.Models
 {
     public class Student
     {
-        [Required]
-        public int ID { get; set; }
-        [Required]
+        [Required(ErrorMessage="Must enter a student ID eg. X000123456")]
+        [StringLength(15)]
+        [RegularExpression(@"^[A-Z]+[a-zA-Z''-'\s]*$", ErrorMessage=("ID must begin with X") )]
+        public string ID { get; set; }
+
+        [Required(ErrorMessage=("You must enter a Last Name"))]
+        [StringLength (50)]
         public string LastName { get; set; }
-        [Required]
+
+        [Required(ErrorMessage=("You must enter a first name"))]
+        [StringLength(50)]
         public string FirstName { get; set; }
+
+        //must look at this for recording the attendance
         public DateTime AttendanceDate { get; set; }
 
         public virtual ICollection<Attendance> Attendances { get; set; }
