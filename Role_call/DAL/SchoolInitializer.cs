@@ -37,11 +37,13 @@ namespace Role_call.DAL
             };
             courses.ForEach(s => context.Courses.Add(s));
             context.SaveChanges();
-            //var Attendances = new List<Attendance>
-            //{
-            //new Attendance{StudentID=1,CourseID=1050,Year=Year.First},
-            //new Attendance{StudentID=1,CourseID=4022,Year=Year.Fourth},
-            //new Attendance{StudentID=1,CourseID=4041,Year=Year.Fourth},
+
+            //this is for enrolling a student on a course
+            var Attendances = new List<Attendance>
+            {
+            new Attendance{StudentID="x00095250",CourseID=1050,Year=Year.First},
+            new Attendance{StudentID="x00095252",CourseID=4022,Year=Year.Fourth},
+            new Attendance{StudentID="x00095253",CourseID=4041,Year=Year.Fourth},
             //new Attendance{StudentID=2,CourseID=1045,Year=Year.First},
             //new Attendance{StudentID=2,CourseID=3141,Year=Year.Third},
             //new Attendance{StudentID=2,CourseID=2021,Year=Year.Second},
@@ -51,9 +53,9 @@ namespace Role_call.DAL
             //new Attendance{StudentID=5,CourseID=4041,Year=Year.Fourth},
             //new Attendance{StudentID=6,CourseID=1045, Year=Year.First},
             //new Attendance{StudentID=7,CourseID=3141,Year=Year.Third},
-            //};
-            //Attendances.ForEach(s => context.Attendances.Add(s));
-            //context.SaveChanges();
+            };
+            Attendances.ForEach(s => context.Attendances.Add(s));
+            context.SaveChanges();
         }
     }
 }
