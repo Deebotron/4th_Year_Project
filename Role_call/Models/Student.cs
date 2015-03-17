@@ -23,6 +23,8 @@ namespace Role_call.Models
         [StringLength(50)]
         public string FirstName { get; set; }
 
+
+        //used for displaying students enrolled in courses
         [Display(Name = "FirstName")]
         public string FullName
         {

@@ -13,14 +13,14 @@ namespace Role_call.DAL
         {
             var students = new List<Student>
             {
-            new Student{ID ="X00095250", FirstName="Stephen",LastName="Begley", AttendanceDate=DateTime.Parse("2015-04-01")},
-            new Student{ID ="X00095251",FirstName="Meredith",LastName="Alonso",AttendanceDate=DateTime.Parse("2015-02-01")},
-            new Student{ID ="X00095252",FirstName="Arturo",LastName="Anand",AttendanceDate=DateTime.Parse("2015-04-01")},
-            new Student{ID ="X00095253",FirstName="Gytis",LastName="Barzdukas",AttendanceDate=DateTime.Parse("2015-04-01")},
-            new Student{ID ="X00095254",FirstName="Yan",LastName="Li",AttendanceDate=DateTime.Parse("2015-08-01")},
-            new Student{ID ="X00095255",FirstName="Peggy",LastName="Justice",AttendanceDate=DateTime.Parse("2015-02-01")},
-            new Student{ID ="X00095256",FirstName="Laura",LastName="Norman",AttendanceDate=DateTime.Parse("2015-02-01")},
-            new Student{ID ="X00095257",FirstName="Nino",LastName="Olivetto",AttendanceDate=DateTime.Parse("2015-08-01")}
+            new Student{ID ="X00095250",FirstName="Stephen",LastName="Begley", AttendanceDate=DateTime.Parse("2015-04-01")},
+            new Student{ID ="X00095251",FirstName="Thomas",LastName="Jones",AttendanceDate=DateTime.Parse("2015-02-01")},
+            new Student{ID ="X00095252",FirstName="Gary",LastName="Curran",AttendanceDate=DateTime.Parse("2015-04-01")},
+            new Student{ID ="X00095253",FirstName="Cliff",LastName="Browne",AttendanceDate=DateTime.Parse("2015-04-01")},
+            new Student{ID ="X00095254",FirstName="John",LastName="Diez-Daly",AttendanceDate=DateTime.Parse("2015-08-01")},
+            new Student{ID ="X00095255",FirstName="Harry",LastName="Kane",AttendanceDate=DateTime.Parse("2015-02-01")},
+            new Student{ID ="X00095256",FirstName="David",LastName="Ginola",AttendanceDate=DateTime.Parse("2015-02-01")},
+            new Student{ID ="X00095257",FirstName="Ryan",LastName="Mason",AttendanceDate=DateTime.Parse("2015-08-01")}
             };
 
             students.ForEach(s => context.Students.Add(s));
