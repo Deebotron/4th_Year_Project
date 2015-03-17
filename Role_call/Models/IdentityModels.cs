@@ -29,5 +29,9 @@ namespace Role_call.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<Role_call.Models.Student> Students { get; set; }
+
+        public System.Data.Entity.DbSet<Role_call.Models.Course> Courses { get; set; }
     }
 }
