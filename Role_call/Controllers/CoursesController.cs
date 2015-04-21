@@ -13,7 +13,7 @@ namespace Role_call.Controllers
 {
     public class CoursesController : Controller
     {
-        private SchoolContext db = new SchoolContext();
+        private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Courses
         public ActionResult Index()
