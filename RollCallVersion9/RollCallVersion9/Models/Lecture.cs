@@ -29,8 +29,6 @@ namespace RollCallVersion9.Models
         public virtual Student Student { get; set; }
 
         public virtual Enrollment Enrollments { get; set; }
-
-
         public virtual ICollection<Student> Students { get; set; }
     }
 }
