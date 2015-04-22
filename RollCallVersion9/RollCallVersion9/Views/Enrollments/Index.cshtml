@@ -4,15 +4,21 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Enrollments</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <a class="btn btn-info btn-sm" @Html.ActionLink("Create New", "Create") </a>
 </p>
 <table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Course.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Student.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Student.LastName)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Student.StudentNumber)
@@ -29,15 +35,30 @@
             @Html.DisplayFor(modelItem => item.Course.Title)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.Student.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Student.LastName)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Student.StudentNumber)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Grade)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EnrollmentID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.EnrollmentID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.EnrollmentID })
+            <div class="btn-group">
+                <a href="#" class="btn btn-info">Options</a>
+                <a href="#" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+
+                    <li>@Html.ActionLink("Edit", "Edit", new { id = item.EnrollmentID }) </li>
+                    <li>@Html.ActionLink("Details", "Details", new { id = item.EnrollmentID }) </li>
+                    <li>@Html.ActionLink("Delete", "Delete", new { id = item.EnrollmentID })</li>
+
+                </ul>
+            </div>                  
+                                 
         </td>
     </tr>
 }

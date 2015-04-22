@@ -7,7 +7,7 @@
 <h2>Lectures</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <a class="btn btn-info btn-sm" @Html.ActionLink("Create New", "Create") </a>
 </p>
 <table class="table">
     <tr>
@@ -38,6 +38,7 @@
 @foreach (var item in Model) {
     <tr>    
         <td>
+
         @Html.ActionLink("Take Attendance", "Attendance", new { id = item.LectureId })
         </td>
         <td>
@@ -59,9 +60,18 @@
             @Html.DisplayFor(modelItem => item.attended)
         </td>*@
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.LectureId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.LectureId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.LectureId })
+            <div class="btn-group">
+                <a href="#" class="btn btn-info">Options</a>
+                <a href="#" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+
+                    <li>@Html.ActionLink("Edit", "Edit", new { id = item.LectureId })</li>
+                    <li>@Html.ActionLink("Details", "Details", new { id = item.LectureId }) </li>
+                    <li>@Html.ActionLink("Delete", "Delete", new { id = item.LectureId })</li>
+
+                </ul>
+            </div>
+
         </td>
     </tr>
 }
