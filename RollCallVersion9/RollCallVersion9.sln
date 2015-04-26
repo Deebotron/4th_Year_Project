@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E11F0F
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "RollCallVersion9.Azure", "RollCallVersion9.Azure\RollCallVersion9.Azure.ccproj", "{884EB7B6-F95F-4C7E-8313-FC6ADE8D0A34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{D880D9CF-399C-4113-B32D-4016A6CF3B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D880D9CF-399C-4113-B32D-4016A6CF3B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D880D9CF-399C-4113-B32D-4016A6CF3B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{884EB7B6-F95F-4C7E-8313-FC6ADE8D0A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{884EB7B6-F95F-4C7E-8313-FC6ADE8D0A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{884EB7B6-F95F-4C7E-8313-FC6ADE8D0A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{884EB7B6-F95F-4C7E-8313-FC6ADE8D0A34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
