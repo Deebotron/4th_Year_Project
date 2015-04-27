@@ -6586,3 +6586,9 @@ button.close {
   background-color: #fff;
   color: #772953;
 }
+
+.scheduler_container{
+    width:100%;
+    height:500px;
+    border:1px solid #aeaeae;
+}

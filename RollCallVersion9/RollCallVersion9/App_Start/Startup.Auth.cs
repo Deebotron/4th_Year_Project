@@ -54,9 +54,9 @@ namespace RollCallVersion9
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "1612406532308021",
+               appSecret: "cfc46d5abc63f2f4df3cec02e7bca71f");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{

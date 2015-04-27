@@ -15,6 +15,7 @@ namespace RollCallVersion9.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Students
+        [Authorize]
         public ActionResult Index()
         {
             return View(db.Students.ToList());

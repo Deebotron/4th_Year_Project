@@ -15,6 +15,7 @@ namespace RollCallVersion9.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Lectures
+        [Authorize]
         public ActionResult Index()
         {
             var lectures = db.Lectures.Include(l => l.Course);
